@@ -2,4 +2,4 @@
 A portfolio website 
 
 ## Live Preview 
-xxruyle.github.io
+https://xxruyle.github.io/xxruyle.xyz/

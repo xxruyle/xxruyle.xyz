@@ -8,8 +8,26 @@ html, body {
 
 a {
     text-decoration: none;
-    color: rgb(179, 255, 0);
+    width: 0; 
 }
+
+a:hover {
+    color: rgb(190, 190, 7);  
+    transition: 0.9s
+}
+
+a.title-link {
+    text-decoration: none; 
+    color: #000
+}
+
+a.title-link:hover {
+    color: #524343;
+    transition: 0.9s
+
+}
+
+
 
 .header-container {
 
@@ -65,15 +83,19 @@ a {
 }
 
 .material-symbols-outlined {
-
     font-variation-settings:
     'FILL' 0,
     'wght' 500,
     'GRAD' 200,
     'opsz' 48;
-
-
 }
+
+#material-link {
+    color: #000; 
+}
+
+
+
 
 #title-down {
     font-size: 30px;
@@ -164,6 +186,10 @@ a {
     font-size: 60px;
 }
 
+.about-link {
+    color: rgb(124, 173, 8);
+}
+
 .info-container {
     list-style-type: none;
     margin-left: 50px;
@@ -181,26 +207,17 @@ li {
 
 }
 
-a {
-    text-decoration: none; 
-}
 
-a:hover {
-    color: yellow;  
-    transition: 0.9s
-}
+
+
 
 .btn {
     color: white; 
     padding: 8px 20px; 
     background-color: black;
-    border: 0.5px solid yellowgreen; 
+    border: 0.5px solid  red; 
 }
 
-.btn:hover {
-    background-color: yellowgreen;
-    transition: 0.9s;
-}
 
 
 

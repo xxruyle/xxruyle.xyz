@@ -1,0 +1,226 @@
+html, body {
+    font-family: 'EB Garamond', sans-serif, 'Times New Roman', Times, serif;
+    display: flex; 
+    flex-direction: column;
+    margin: 0; 
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(179, 255, 0);
+}
+
+.header-container {
+
+    background-color: black;
+    color: #fff; 
+
+    display: flex; 
+    gap: 20px; 
+
+}
+
+
+.header {
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+.logo {
+    width: 40px; 
+    margin-top: 20px;
+    margin-left: 20px;
+    height: auto; 
+}
+
+.title-container {
+    background-color: #000;
+    color: #fff; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.hero {
+    margin-bottom: 160px;
+}
+
+.title, .title-sub {
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.title {
+    font-size: 70px;
+}
+
+.title-sub {
+    font-size: 25px;
+}
+
+.material-symbols-outlined {
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 200,
+    'opsz' 48;
+
+
+}
+
+#title-down {
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.projects-container {
+    background-color: #fff;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.project-container-title {
+    display: flex; 
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 60px;
+
+}
+
+.project-display {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    margin-bottom: 200px;
+
+}
+
+.project-info {
+    display: flex; 
+    flex-direction: column;
+    font-size: 40px;
+    flex: 0.3;
+
+}
+
+.project-subtext {
+    font-size: 18px;
+    width: 200px;
+    text-align: justify;
+}
+
+.project-card {
+    display: flex; 
+    flex: 1; 
+    justify-content: center; 
+
+    border-radius: 3px;
+    height: 450px; 
+    width: 800px;
+}
+
+
+.project-img {
+    display: block;
+    width: 100%;
+}
+
+
+.about-container {
+    background-color: #000; 
+    color: white; 
+
+    display: flex; 
+    flex-direction: column;
+    
+}
+
+.about-hero {
+    display: flex; 
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.about-title {
+    display: flex; 
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    font-size: 60px;
+}
+
+.info-container {
+    list-style-type: none;
+    margin-left: 50px;
+    gap: 50px; 
+}
+
+.info-title {
+    list-style-type: none;
+    font-size: 28px; 
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+a {
+    text-decoration: none; 
+}
+
+a:hover {
+    color: yellow;  
+    transition: 0.9s
+}
+
+.btn {
+    color: white; 
+    padding: 8px 20px; 
+    background-color: black;
+    border: 0.5px solid yellowgreen; 
+}
+
+.btn:hover {
+    background-color: yellowgreen;
+    transition: 0.9s;
+}
+
+
+
+.footer {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color: white; 
+    display: flex;
+    justify-content: center;
+
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1.0s, opacity 1.0s linear;
+}
+
+.visible {
+    visibility: visible; 
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}

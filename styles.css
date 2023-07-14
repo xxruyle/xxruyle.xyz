@@ -188,6 +188,7 @@ a.title-link:hover {
 
 .about-link {
     color: rgb(124, 173, 8);
+    font-size: 25px;
 }
 
 .info-container {
@@ -198,7 +199,7 @@ a.title-link:hover {
 
 .info-title {
     list-style-type: none;
-    font-size: 28px; 
+    font-size: 40px; 
 }
 
 li {
@@ -222,7 +223,7 @@ li {
 
 
 .footer {
-    font-size: 12px;
+    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 100px;
     color: white; 

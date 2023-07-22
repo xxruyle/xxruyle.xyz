@@ -3,7 +3,6 @@ html, body {
     display: flex; 
     flex-direction: column;
     margin: 0; 
-
 }
 
 a {
@@ -24,13 +23,11 @@ a.title-link {
 a.title-link:hover {
     color: #524343;
     transition: 0.9s
-
 }
 
 
 
 .header-container {
-
     background-color: black;
     color: #fff; 
 
@@ -106,6 +103,7 @@ a.title-link:hover {
 
 
 .projects-container {
+    height: 100%; 
     background-color: #fff;
     display: flex; 
     flex-direction: column;
@@ -125,8 +123,9 @@ a.title-link:hover {
 .project-display {
     display: flex; 
     justify-content: center;
-    flex-wrap: wrap;
+    max-height: 100vh; 
 
+    flex-wrap: wrap;
 
     margin-bottom: 200px;
 

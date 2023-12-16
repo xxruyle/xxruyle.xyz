@@ -137,12 +137,15 @@ a.title-link:hover {
     font-size: 40px;
     flex: 0.3;
 
+    padding-right: 30px;
+
+
 }
 
 .project-subtext {
     font-size: 18px;
-    width: 200px;
-    text-align: justify;
+    width: 250px;
+    text-align: wrap;
 }
 
 .project-card {
@@ -156,9 +159,12 @@ a.title-link:hover {
 }
 
 
+
+
 .project-img {
-    display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -187,7 +193,7 @@ a.title-link:hover {
 
 .about-link {
     color: rgb(124, 173, 8);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .info-container {
@@ -198,7 +204,7 @@ a.title-link:hover {
 
 .info-title {
     list-style-type: none;
-    font-size: 40px; 
+    font-size: 27px; 
 }
 
 li {

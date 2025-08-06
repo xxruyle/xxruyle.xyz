@@ -10,10 +10,8 @@ let callback = (entries, observer) => {
         {
             if (entry.isIntersecting) 
             {
-                console.log('hello');
                 makeVisibile(entry.target) 
             } else {
-                console.log('goodbye'); 
                 entry.target.classList.add('hidden');  
             }
         }
@@ -22,21 +20,30 @@ let callback = (entries, observer) => {
   }
 
   let observer = new IntersectionObserver(callback, {
-    threshold: [0.5] // If 50% of the element is in the screen, we count it!
-    // Can change the thresholds based on your needs. The default is 0 - it'll run only when the element first comes into view
+    threshold: [0.5] 
   });
 
 
 const arrowDown = document.querySelector('.material-symbols-outlined');
 
+let prevScrollPos = window.pageYOffset; 
+
 window.addEventListener('scroll', () => {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
+    arrowDown.classList.remove('hidden'); 
+  } else if (prevScrollPos < currentScrollPos) {
     arrowDown.classList.add('hidden'); 
-})
+  }
+
+  prevScrollPos = currentScrollPos; 
+});
 
 
 
 
-const projectDisplays = document.querySelectorAll('.project-display'); 
+const projectDisplays = document.querySelectorAll('.project-display, .experience-container, .project-container-title'); 
 
 
 projectDisplays.forEach(pDisplay => {

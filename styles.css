@@ -102,6 +102,7 @@ a.title-link:hover {
 }
 
 .project-container-title {
+    font-size: 2.5em;
     display: flex; 
     margin-top: 1em;
     margin-bottom: 1em;
@@ -213,8 +214,7 @@ li {
     transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .header-container {
         flex-direction: column;
         align-items: center;
@@ -233,20 +233,17 @@ li {
         font-size: 1em;
     }
 
-    .project-container-title {
-        font-size: 2.5em;
-    }
-
     .project-info {
         font-size: 2em;
         padding-right: 0.5em;
     }
 
     .project-subtext {
-        font-size: 0.35em;
+        font-size: 0.45em;
         width: 15em;
         text-align: center;
         margin-bottom: 2em;
+        margin: auto; 
     }
 
     .project-title { 
@@ -264,10 +261,118 @@ li {
         width: 90%; 
         height: auto;
         margin-bottom: 0.2em; 
+        margin-top: 0.6em;
     }
 
     .about-title {
         font-size: 2em;
     }
+
+    .experience-title {
+    font-size: 2.5em;
 }
 
+.experience-description {
+    text-align: justify;
+
+}
+
+.experience-entry {
+    font-size: 1.2em;
+}
+
+.about-hero-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.about-box {
+    align-items: center;
+    text-align: center;
+}
+}
+
+
+.experience-container {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 2em;
+}
+
+.experience-title {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+.experience-entry {
+    max-width: 900px;
+    margin-bottom: 3em;
+    font-size: 1.5em;
+}
+
+.experience-role {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.experience-place {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 0.2em;
+}
+
+.experience-date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 0.5em;
+}
+
+.experience-description {
+    font-size: 0.8em;
+    line-height: 1.6em;
+    max-width: 800px;
+}
+
+
+.about-hero-grid {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    flex-wrap: wrap;
+    margin-bottom: 6em;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #111;
+    padding: 2em 2.5em;
+    border-left: 3px solid rgb(124, 173, 8);
+    max-width: 350px;
+    min-width: 280px;
+    border-radius: 8px;
+    gap: 1em;
+}
+
+.about-link-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.2em;
+    color: rgb(124, 173, 8);
+    transition: color 0.3s ease;
+}
+
+.about-link-button:hover {
+    color: rgb(190, 190, 7);
+}
+
+.about-box .material-symbols-outlined,
+.about-box .fa {
+    font-size: 1.3em;
+}
